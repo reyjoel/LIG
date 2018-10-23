@@ -1,0 +1,9 @@
+[6/25/2018, 2:28:00 PM] layer "icn_facebook.font": Unsupported extension: font
+[6/25/2018, 2:28:00 PM] layer "icn_twitter.font": Unsupported extension: font
+[6/25/2018, 2:28:00 PM] layer "icn_insta.font": Unsupported extension: font
+[6/25/2018, 2:28:00 PM] layer "icn_arrow.font": Unsupported extension: font
+[6/25/2018, 2:28:00 PM] layer "icn_arrow.font": Unsupported extension: font
+[6/25/2018, 2:28:00 PM] layer "text-more.png": Duplicate path: text-more.png
+[6/25/2018, 2:28:00 PM] layer "icn_arrow.font": Unsupported extension: font
+[6/25/2018, 2:28:00 PM] layer "icn_arrow.font のコピー": Expected end of input but "\u306E" found.
+[6/25/2018, 2:28:00 PM] layer "icn_arrow.font のコピー 2": Expected end of input but "\u306E" found.

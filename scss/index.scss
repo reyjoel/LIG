@@ -1,0 +1,218 @@
+$primary-color: #000;
+$font-stack: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$gold: #e7ba2f;
+
+%details-shared{
+    font-size: 13px;
+}
+
+%reset-padding-margin{
+    padding: 0;
+    margin: 0;
+}
+
+%dir-position{
+    position: absolute;
+    top: 35%;
+}
+
+html{
+    border-top: 3px solid $gold;
+    width: 1400px;
+}
+
+body {
+    color: $primary-color;
+    font-family: $font-stack;
+}
+
+h1{
+    font-size: 80px;
+    font-family: 'Lucida Calligraphy';
+}
+
+h3{
+    @extend %reset-padding-margin;
+    font-size: 18px;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+.hide{
+    display: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+div.container{
+    width: 1400px;
+
+    .center{
+        text-align: center;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+}
+
+#banner{
+    position: relative;
+    .banner-content{
+        position: absolute;
+        top: 13%;
+        left: 20%;
+        .title{
+            color: #fff;
+            font-size: 66px;
+            margin-bottom: 18px;
+        }
+        p{
+            color: #fff;
+            margin: 0;
+            font-size: 17px;
+        }
+    }
+    .active{
+        display: block !important;
+    }
+    .slides{
+        display: none;
+    }
+    .circles{
+        position: relative;
+        bottom: 50px;
+        color: #fff;
+        i{
+            padding-right: 10px;
+        }
+    }
+    i.current{
+        color: $gold;
+    }
+    .dir{
+        color: #fff;
+        font-size: 60px;
+        cursor: pointer;
+    }
+    .prev{
+        @extend %dir-position;
+        left: 12%;
+    }
+    .next{
+        @extend %dir-position;
+        right: 12%;
+    }
+}
+
+.content{
+    width: 1085px;
+    margin: auto;
+    p{
+        @extend %details-shared;
+        @extend %reset-padding-margin;
+    }
+    label{
+        @extend %details-shared;
+        @extend %reset-padding-margin;
+        color: #999;
+    }
+    .txt-right{
+        text-align: right;
+    }
+}
+
+.post{
+    width: 685px;
+    padding: 20px;
+    a{
+        display: block;
+    }
+    .post-container{
+        cursor: pointer;
+        margin-bottom: 50px;
+        .post-thumb{
+            width: auto;
+            float: left;
+        }
+        .post-thumb img.show{
+            display: block;
+        }
+        .post-content{
+            overflow: hidden;
+            padding: 0 20px;
+        }
+    }
+    .post-container:hover h3{
+        color: $gold;
+    }
+    .post-container:hover img.show{
+        display: none;
+    }
+    .post-container:hover img.hide{
+        display: block;
+    }
+    .button{
+        background-color: #333;
+        color: #fff;
+        font-weight: 500;
+        width: 410px;
+        margin: auto;
+        span{
+            margin-right: 10px;
+        }
+    }
+}
+
+.side{
+    width: 320px;
+    padding: 20px;
+    background-color: #efefef;
+    .semi-banner{
+        height: 310px;
+        background-color: #fff;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .dummy-banner{
+        width: 100%;
+        height: 93px;
+        background-color: #666;
+        margin: 17px 0;
+        cursor: pointer;
+    }
+    .side-container{
+        cursor: pointer;
+        margin: 30px 0;
+        .side-thumb{
+            width: auto;
+            float: left;
+        }
+        .side-thumb img{
+            display: block;
+        }
+        .side-content{
+            overflow: hidden;
+            padding: 0 10px;
+        }
+    }
+}
+
+.footer{
+    height: 25px;
+    padding: 15px;
+    color: #fff;
+    background-color: #000;
+    span{
+        margin-left: 25px;
+    }
+}

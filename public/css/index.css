@@ -1,0 +1,155 @@
+@charset "UTF-8";
+.content p, .content label {
+  font-size: 13px; }
+
+h3, .content p, .content label {
+  padding: 0;
+  margin: 0; }
+
+#banner .prev, #banner .next {
+  position: absolute;
+  top: 35%; }
+
+html {
+  border-top: 3px solid #e7ba2f;
+  width: 1400px; }
+
+body {
+  color: #000;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+h1 {
+  font-size: 80px;
+  font-family: 'Lucida Calligraphy'; }
+
+h3 {
+  font-size: 18px; }
+
+.clear-fix {
+  clear: both; }
+
+.hide {
+  display: none; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+div.container {
+  width: 1400px; }
+  div.container .center {
+    text-align: center; }
+  div.container .left {
+    float: left; }
+  div.container .right {
+    float: right; }
+
+#banner {
+  position: relative; }
+  #banner .banner-content {
+    position: absolute;
+    top: 13%;
+    left: 20%; }
+    #banner .banner-content .title {
+      color: #fff;
+      font-size: 66px;
+      margin-bottom: 18px; }
+    #banner .banner-content p {
+      color: #fff;
+      margin: 0;
+      font-size: 17px; }
+  #banner .active {
+    display: block !important; }
+  #banner .slides {
+    display: none; }
+  #banner .circles {
+    position: relative;
+    bottom: 50px;
+    color: #fff; }
+    #banner .circles i {
+      padding-right: 10px; }
+  #banner i.current {
+    color: #e7ba2f; }
+  #banner .dir {
+    color: #fff;
+    font-size: 60px;
+    cursor: pointer; }
+  #banner .prev {
+    left: 12%; }
+  #banner .next {
+    right: 12%; }
+
+.content {
+  width: 1085px;
+  margin: auto; }
+  .content label {
+    color: #999; }
+  .content .txt-right {
+    text-align: right; }
+
+.post {
+  width: 685px;
+  padding: 20px; }
+  .post a {
+    display: block; }
+  .post .post-container {
+    cursor: pointer;
+    margin-bottom: 50px; }
+    .post .post-container .post-thumb {
+      width: auto;
+      float: left; }
+    .post .post-container .post-thumb img.show {
+      display: block; }
+    .post .post-container .post-content {
+      overflow: hidden;
+      padding: 0 20px; }
+  .post .post-container:hover h3 {
+    color: #e7ba2f; }
+  .post .post-container:hover img.show {
+    display: none; }
+  .post .post-container:hover img.hide {
+    display: block; }
+  .post .button {
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+    width: 410px;
+    margin: auto; }
+    .post .button span {
+      margin-right: 10px; }
+
+.side {
+  width: 320px;
+  padding: 20px;
+  background-color: #efefef; }
+  .side .semi-banner {
+    height: 310px;
+    background-color: #fff; }
+    .side .semi-banner img {
+      max-width: 100%;
+      max-height: 100%; }
+  .side .dummy-banner {
+    width: 100%;
+    height: 93px;
+    background-color: #666;
+    margin: 17px 0;
+    cursor: pointer; }
+  .side .side-container {
+    cursor: pointer;
+    margin: 30px 0; }
+    .side .side-container .side-thumb {
+      width: auto;
+      float: left; }
+    .side .side-container .side-thumb img {
+      display: block; }
+    .side .side-container .side-content {
+      overflow: hidden;
+      padding: 0 10px; }
+
+.footer {
+  height: 25px;
+  padding: 15px;
+  color: #fff;
+  background-color: #000; }
+  .footer span {
+    margin-left: 25px; }

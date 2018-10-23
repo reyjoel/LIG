@@ -1,0 +1,76 @@
+- var list_left = 10;
+- var list_right = 3
+doctype html
+html
+    head
+        title Front End Page
+        link(rel='stylesheet', href='/css/index.css', type='text/css')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lucida+Calligraphy')
+        link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
+    body
+        div.container
+            h1.center
+                a(href='/unknown')
+                    i Website Logo
+            div#banner.center
+                - for(var i = 1; i <= list_right; i++){
+                    div.slides
+                        img(src='/images/banner1.png')
+                        div.banner-content
+                            h2.title キャッチコピーが入ります。
+                            p.banner-details サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            p.banner-details サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                - }
+                div.circles
+                    - for(var i = 1; i <= list_right; i++){
+                        i.fa.fa-circle
+                    -}
+                div.dir.prev
+                    i.fa.fa-angle-left
+                div.dir.next
+                    i.fa.fa-angle-right
+            div.content
+                div.post.left
+                    - for(var i = 1; i <= list_left; i++){
+                        div.post-container
+                            div.post-thumb.left
+                                img.show(src='/images/image1.png')
+                                img.hide(src='/images/image2.png')
+                            div.post-content
+                                label 2016.01.01
+                                h3 サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                                p サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキス
+                    - }
+                    div.button.center
+                        a(href='/unknown') More
+                            span.right
+                                i.fa.fa-angle-right
+                div.side.right
+                    div.semi-banner
+                        img
+                    h3.center Recommend
+                    hr
+                    - for(var i = 1; i <= list_right; i++){
+                        div.side-container
+                            div.side-thumb.left
+                                img(src='/images/small-image1.png')
+                            div.side-content
+                                p サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                                label 2016.03.26
+                    - }
+                    - for(var i = 1; i <= list_right; i++){
+                        img.dummy-banner(src="/images/sb" + i + ".jpg")
+                    - }
+                div.clear-fix
+                div.txt-right
+                    a(href='#') 
+                        i.fa.fa-angle-up
+            div.footer
+                div.content
+                    div.left
+                        a(href='/unknown') 運営会社 
+                            span 個人情報保護について
+                    div.right 
+                        b ©2016 Sample
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js')
+        script(src='/javascript/custom.js')
